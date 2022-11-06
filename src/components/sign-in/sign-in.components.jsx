@@ -38,8 +38,8 @@ const SignInForm = () => {
                password
             )
          setCurrentUser(user)
-        resetFormFields()
-        
+         resetFormFields()
+
          alert(`Welcome Back ${user.email}`)
       } catch (err) {
          switch (err.code) {
@@ -101,13 +101,6 @@ const SignInForm = () => {
 
             <div className='buttons-container'>
                <Button type='submit'>Sign In</Button>
-               <Button
-                  type='button'
-                  buttonType='google'
-                  onClick={signInWithGoogle}
-               >
-                  Google sign in
-               </Button>
             </div>
          </form>
       </div>
